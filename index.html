@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вкусные рецепты | Домашняя кухня</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">Вкусные<span>Рецепты</span></a>
+                <ul class="nav-links">
+                    <li><a href="#home"><i class="fas fa-home"></i> Главная</a></li>
+                    <li><a href="#recipes"><i class="fas fa-utensils"></i> Рецепты</a></li>
+                    <li><a href="#categories"><i class="fas fa-list"></i> Категории</a></li>
+                    <li><a href="#about"><i class="fas fa-info-circle"></i> О нас</a></li>
+                    <li><a href="#contact"><i class="fas fa-envelope"></i> Контакты</a></li>
+                </ul>
+                <div class="nav-buttons">
+                    <button class="btn-search"><i class="fas fa-search"></i></button>
+                    <button class="btn-login">Войти</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main>
+        <!-- Герой-секция -->
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Откройте мир <span>вкуснейших блюд</span></h1>
+                    <p>Более 1000 проверенных рецептов с пошаговыми инструкциями и фотографиями</p>
+                    <a href="#recipes" class="btn-primary">Исследовать рецепты</a>
+                </div>
+                <div class="hero-image">
+                    <div class="image-frame">
+                        <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1065&q=80" alt="Вкусные блюда">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Популярные рецепты -->
+        <section class="recipes-section" id="recipes">
+            <div class="container">
+                <h2 class="section-title">Популярные рецепты</h2>
+                <p class="section-subtitle">Попробуйте наши самые популярные блюда</p>
+                
+                <div class="recipes-grid">
+                    <!-- Рецепт 1 -->
+                    <div class="recipe-card">
+                        <div class="recipe-img">
+                            <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Паста Карбонара">
+                            <div class="recipe-category">Итальянская кухня</div>
+                            <div class="recipe-time"><i class="far fa-clock"></i> 30 мин</div>
+                        </div>
+                        <div class="recipe-info">
+                            <h3>Паста Карбонара</h3>
+                            <p>Классическая итальянская паста с беконом, сыром и яйцами.</p>
+                            <div class="recipe-stats">
+                                <span><i class="fas fa-fire"></i> 420 ккал</span>
+                                <span><i class="fas fa-user-friends"></i> 4 порции</span>
+                                <span><i class="fas fa-star"></i> 4.8</span>
+                            </div>
+                            <a href="#" class="btn-recipe">Смотреть рецепт</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Рецепт 2 -->
+                    <div class="recipe-card">
+                        <div class="recipe-img">
+                            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1081&q=80" alt="Пицца Маргарита">
+                            <div class="recipe-category">Итальянская кухня</div>
+                            <div class="recipe-time"><i class="far fa-clock"></i> 45 мин</div>
+                        </div>
+                        <div class="recipe-info">
+                            <h3>Пицца Маргарита</h3>
+                            <p>Традиционная итальянская пицца с томатным соусом, моцареллой и базиликом.</p>
+                            <div class="recipe-stats">
+                                <span><i class="fas fa-fire"></i> 285 ккал</span>
+                                <span><i class="fas fa-user-friends"></i> 8 порций</span>
+                                <span><i class="fas fa-star"></i> 4.9</span>
+                            </div>
+                            <a href="#" class="btn-recipe">Смотреть рецепт</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Рецепт 3 -->
+                    <div class="recipe-card">
+                        <div class="recipe-img">
+                            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Стейк на гриле">
+                            <div class="recipe-category">Американская кухня</div>
+                            <div class="recipe-time"><i class="far fa-clock"></i> 25 мин</div>
+                        </div>
+                        <div class="recipe-info">
+                            <h3>Стейк на гриле</h3>
+                            <p>Сочный стейк средней прожарки с ароматными травами и овощами-гриль.</p>
+                            <div class="recipe-stats">
+                                <span><i class="fas fa-fire"></i> 520 ккал</span>
+                                <span><i class="fas fa-user-friends"></i> 2 порции</span>
+                                <span><i class="fas fa-star"></i> 4.7</span>
+                            </div>
+                            <a href="#" class="btn-recipe">Смотреть рецепт</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Рецепт 4 -->
+                    <div class="recipe-card">
+                        <div class="recipe-img">
+                            <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" alt="Салат Цезарь">
+                            <div class="recipe-category">Французская кухня</div>
+                            <div class="recipe-time"><i class="far fa-clock"></i> 20 мин</div>
+                        </div>
+                        <div class="recipe-info">
+                            <h3>Салат Цезарь</h3>
+                            <p>Классический салат с курицей, листьями салата, сухариками и соусом Цезарь.</p>
+                            <div class="recipe-stats">
+                                <span><i class="fas fa-fire"></i> 320 ккал</span>
+                                <span><i class="fas fa-user-friends"></i> 4 порции</span>
+                                <span><i class="fas fa-star"></i> 4.6</span>
+                            </div>
+                            <a href="#" class="btn-recipe">Смотреть рецепт</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center">
+                    <a href="#" class="btn-secondary">Все рецепты <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Категории блюд -->
+        <section class="categories-section" id="categories">
+            <div class="container">
+                <h2 class="section-title">Категории блюд</h2>
+                <p class="section-subtitle">Выберите рецепты по категориям</p>
+                
+                <div class="categories-grid">
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3>Основные блюда</h3>
+                        <p>Более 300 рецептов</p>
+                    </div>
+                    
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3>Вегетарианские</h3>
+                        <p>Более 150 рецептов</p>
+                    </div>
+                    
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-birthday-cake"></i>
+                        </div>
+                        <h3>Десерты</h3>
+                        <p>Более 200 рецептов</p>
+                    </div>
+                    
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-mug-hot"></i>
+                        </div>
+                        <h3>Напитки</h3>
+                        <p>Более 80 рецептов</p>
+                    </div>
+                    
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-bread-slice"></i>
+                        </div>
+                        <h3>Выпечка</h3>
+                        <p>Более 120 рецептов</p>
+                    </div>
+                    
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-fire"></i>
+                        </div>
+                        <h3>Барбекю</h3>
+                        <p>Более 90 рецептов</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- О нас -->
+        <section class="about-section" id="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2 class="section-title">О нашей кухне</h2>
+                        <p>Мы собираем и тестируем лучшие рецепты со всего мира, чтобы вы могли готовить вкусные и красивые блюда дома. Наша команда поваров и кулинаров тщательно проверяет каждый рецепт, чтобы гарантировать отличный результат.</p>
+                        <p>Все рецепты сопровождаются пошаговыми инструкциями, качественными фотографиями и полезными советами. Мы верим, что готовить может каждый, независимо от уровня кулинарных навыков.</p>
+                        <div class="about-stats">
+                            <div class="stat">
+                                <h3>1000+</h3>
+                                <p>Рецептов</p>
+                            </div>
+                            <div class="stat">
+                                <h3>50+</h3>
+                                <p>Поваров</p>
+                            </div>
+                            <div class="stat">
+                                <h3>150K+</h3>
+                                <p>Пользователей</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Наша кухня">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Вкусные Рецепты</h3>
+                    <p>Кулинарный сайт с проверенными рецептами для домашнего приготовления.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Быстрые ссылки</h3>
+                    <ul>
+                        <li><a href="#home">Главная</a></li>
+                        <li><a href="#recipes">Рецепты</a></li>
+                        <li><a href="#categories">Категории</a></li>
+                        <li><a href="#about">О нас</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Популярные категории</h3>
+                    <ul>
+                        <li><a href="#">Итальянская кухня</a></li>
+                        <li><a href="#">Азиатская кухня</a></li>
+                        <li><a href="#">Десерты</a></li>
+                        <li><a href="#">Здоровое питание</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Контакты</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Москва, ул. Кулинарная, 15</li>
+                        <li><i class="fas fa-phone"></i> +7 (999) 123-45-67</li>
+                        <li><i class="fas fa-envelope"></i> info@vkusnyerecepty.ru</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Вкусные Рецепты. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
